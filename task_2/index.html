@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+    <div class="form-container">
+
+        <h1>Online Registration Form</h1>
+        <form id="registrationForm">
+            <div class="box">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required></div>
+
+            <div class="box">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required></div>
+
+            <div class="box">
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required></div>
+
+            <div class="box2">
+            Gender :
+            <label for="male"><input type="radio" name="gender" id="male" value="male" > male</label>
+            <label for="female"><input type="radio" name="gender" id="female" value="female " >female</label>
+            <label for="other"><input type="radio" name="gender" id="other" value="other" >other</label>
+            </div>
+
+            <div class="box2">
+                <label for="choose">Age Group:</label><br>
+                <select name="age" id="choose" style="background-color: transparent;"  required>
+                    <option value="under 18">Under 18</option>
+                    <option value="above 18">Above 18</option>
+                    <option value="above 40">Above 40</option>  
+                </select>
+            </div>
+
+            <div class="box1">
+                select a Race :<br>        
+                    <label for="r1"><input type="radio" id="r1" name="race">run 5km</label>
+                    <label for="r2"><input type="radio" id="r2" name="race">run 7km</label>
+                    <label for="r3"><input type="radio" id="r3" name="race">run 10km</label>
+            </div>
+
+            <div class="box">
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea></div>
+
+            <div class="box2">
+            Do you have any Medical Disorder?
+            <label for="medicaly">
+            <input type="radio" class="medical" name="medical" id="medicaly" value="Yes">Yes</label>
+            <label for="medicaln">
+            <input type="radio" class="medical" name="medical" id="medicaln" value="No">No</label>
+            </div>
+
+            <div class="box">
+                <label for="contact_name">Emergency Contact Name:</label><br>
+                <input type="text" id="contact_name" name="contact_name"  required>
+            </div>
+            <div class="box">
+                <label for="contact_phone">Emergency Contact Phone:</label><br>
+                <input type="tel" id="contact_phone" name="contact_phone" pattern="[0-9]{10}"  required>
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        <div id="response" class="response"></div>
+    </div></div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

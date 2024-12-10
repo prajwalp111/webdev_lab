@@ -1,0 +1,92 @@
+body {
+    
+    font-family: Arial, sans-serif;
+    margin: 100px;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: transparent; */
+    background-image: url('https://world-masters-athletics.org/wp-content/uploads/2023/08/Bucharest_Marathon-scaled.jpg');
+    background-position: center;
+
+}
+
+.form-container {
+    margin-top: 30px;
+    height: 800px;
+    
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    background-color: transparent;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.box input  {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+
+
+.box textarea  {
+
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.box2{
+    margin-bottom: 15px;
+    display: flex;
+    background-color: transparent;
+}
+
+
+
+.box1{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    margin: 15px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.response {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+}
