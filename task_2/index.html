@@ -12,7 +12,7 @@
     <div class="form-container">
 
         <h1>Online Registration Form</h1>
-        <form id="registrationForm">
+        <form id="registrationForm" action="save.php" method="post">
             <div class="box">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required></div>
@@ -66,14 +66,14 @@
             </div>
             <div class="box">
                 <label for="contact_phone">Emergency Contact Phone:</label><br>
-                <input type="tel" id="contact_phone" name="contact_phone" pattern="[0-9]{10}"  required>
+                <input type="tel" id="contact_phone" name="contact_phone"   required>
             </div>
 
             <button type="submit" class="btn">Submit</button>
         </form>
-        <div id="response" class="response"></div>
+       
     </div></div>
 
-    <script src="scripts.js"></script>
+   
 </body>
 </html>
