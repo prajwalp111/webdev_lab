@@ -1,21 +1,21 @@
 <?php
-// Database connection
-$servername = "localhost"; // Use "127.0.0.1" if localhost doesn't work
-$username = "root";        // Replace with your MySQL username
-$password = "";            // Replace with your MySQL password
-$database = "marathon"; // Name of the database
 
-// Create connection
+$servername = "localhost"; 
+$username = "root";        
+$password = "";           
+$database = "marathon";
+
+
 $conn = new mysqli($servername, $username, $password, $database);
 
-// Check connection
+
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Check if the form is submitted
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Retrieve and sanitize input data
+  
     $name = $conn->real_escape_string($_POST['name']);
     $phone = $conn->real_escape_string($_POST['phone']);
     $email = $conn->real_escape_string($_POST['email']);
@@ -23,11 +23,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $contact_phone = $conn->real_escape_string($_POST['contact_phone']);
    
 
-    // Insert data into the database
+  
     $sql = "INSERT INTO `users`(`name`, `email`, `phone`, `contact_name`, `contact_phone`) VALUES ('$name','$email','$phone','$contact_name','$contact_phone')";
 
     if ($conn->query($sql) === TRUE) {
-        // Display success message
+      
         echo "<!DOCTYPE html>
         <html lang='en'>
         <head>
@@ -124,6 +124,6 @@ footer p {
     }
 }
 
-// Close the connection
+
 $conn->close();
 ?>
